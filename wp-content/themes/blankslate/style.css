@@ -17,6 +17,10 @@ BlankSlate is distributed under the terms of the GNU GPL
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
 .sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
 
+.row {
+	max-width: 70rem !important;
+}
+
 #wrapper {
 	max-width: 1280px;
 	margin: auto;
@@ -47,10 +51,29 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 .menu {
-	display: none;
+	display: none !important;
 }
 
 .splash {
 	height: 503px;
 	overflow:hidden;
+}
+
+.arrow {
+	height: 200px;
+	display: table-cell;
+	vertical-align:middle; 
+	text-align:center;
+}
+
+.project-big {
+	margin-bottom: 30px;
+}
+
+div.blue {
+	background-color: #aaaaFF;
+}
+
+div.gray {
+	background-color: #aaaaaa;
 }
