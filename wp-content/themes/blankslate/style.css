@@ -55,25 +55,118 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 .splash {
-	height: 503px;
+	height: 500px;
 	overflow:hidden;
+	background-repeat: no-repeat;
+	background-size: cover;  
+	background-position: center center;
+	background-image: url('images/splash.png');
+}
+
+.splash {
 }
 
 .arrow {
-	height: 200px;
-	display: table-cell;
-	vertical-align:middle; 
 	text-align:center;
+	padding-top: 100px;
+	padding-bottom: 150px;
 }
 
-.project-big {
-	margin-bottom: 30px;
+h1 {
 }
 
-div.blue {
+h1.projects {
+	margin-bottom: 5.625rem;
+	text-align: center;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 900;
+	font-size: 2.5rem;
+}
+
+.project-large {
+	margin-bottom: 2rem;
+}
+
+.project-small {
+	margin-bottom: 2rem;
+}
+.padding-left {
+	margin-left: 2rem;
+}
+.padding-right {
+	margin-right: 2rem;
+}
+.text-right {
+	text-align: right;
+}
+
+.blue {
 	background-color: #aaaaFF;
 }
 
-div.gray {
+.gray {
 	background-color: #aaaaaa;
+}
+
+.quote {
+	font-family: "Source Sans Pro", sans-serif;
+	width: 590px;
+	margin: 0 auto 180px auto;
+}
+.quote .quote-icon {
+	font-weight: 600;
+	font-size: 10.625rem;
+	margin-bottom: 0;
+	margin-top: 110px;
+	padding-bottom: 0;
+	line-height: 0.5em;
+	padding-left: 10px;
+}
+.quote .quote-text {
+	font-weight: 800;
+	font-style: italic;
+	font-size: 1.5625rem;
+	padding-left: 18px;
+}
+
+.about {
+	font-family: "Source Sans Pro", sans-serif;
+	width: 590px;
+	margin: auto;
+}
+
+.about h2 {
+	font-size: 1.75rem;
+	font-weight: 800;
+	padding-left: 18px;
+}
+
+.about p {
+	font-size: 1.125rem;
+	padding-left: 18px;
+}
+
+aside.contact {
+	float:left;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 300;
+	position: absolute;
+	margin-left: -20px;
+}
+
+aside.contact ul {
+	margin: 0;
+	padding: 0;
+}
+
+aside.contact li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+aside.contact .header {
+	margin-top: 10px;
+	font-weight: 600;
 }
