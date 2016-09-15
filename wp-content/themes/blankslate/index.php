@@ -44,7 +44,7 @@
 		</p>
 	</div>
   </section>
-  <aside class="contact">
+  <aside class="contact hide-for-small-only hide-for-medium-only hide-for-large-only">
   	<ul>
 	  	<li class="header">E-MAIL</li>
 		<li>camilla.karlsson@medieinstitutet.se</li>

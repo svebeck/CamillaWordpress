@@ -110,8 +110,8 @@ h1.projects {
 
 .quote {
 	font-family: "Source Sans Pro", sans-serif;
-	width: 590px;
 	margin: 0 auto 180px auto;
+	width: 590px;
 }
 .quote .quote-icon {
 	font-weight: 600;
@@ -170,3 +170,10 @@ aside.contact .header {
 	margin-top: 10px;
 	font-weight: 600;
 }
+
+@media only screen and (max-width: 50em) { 
+	.quote, .about {
+		width: auto;
+	}
+}
+
