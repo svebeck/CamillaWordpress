@@ -15,10 +15,9 @@
 </header>
 <section class="entry-content">
 <p><?php _e( 'Sorry, nothing matched your search. Please try again.', 'blankslate' ); ?></p>
-<?php get_search_form(); ?>
+
 </section>
 </article>
 <?php endif; ?>
 </section>
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
