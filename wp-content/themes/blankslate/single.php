@@ -52,7 +52,13 @@
 	<div class="line"></div>
 
 <?php get_template_part( 'projects' ); ?>
-</section>
 
+
+  <div class="row align-center">
+    <div class="column small-1 arrow">
+		<a href="#wrapper" class="arrow-up"></a>
+    </div>
+  </div>
+</section>
 
 <?php get_footer(); ?>

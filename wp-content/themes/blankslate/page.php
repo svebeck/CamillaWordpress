@@ -3,8 +3,8 @@
   <div class="splash">
   </div>
   <div class="row align-center">
-    <div class="column small-4 arrow">
-		<img src="<?php echo get_template_directory_uri(); ?>/images/arrow.png" />
+    <div class="column small-1 arrow">
+		<a href="#projects" class="arrow-down"></a>
     </div>
   </div>
   <?php get_template_part("projects"); ?>
