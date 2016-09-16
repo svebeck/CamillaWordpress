@@ -13,13 +13,13 @@
   		<div class="column small-6 gray project-large">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/lstk.png" />
   		</div>
-  		<div class="column small-6 project-small">
-  			<div class="padding-left">
+  		<div class="column small-6 project-small-relative">
+  			<div class="margin-left project-bottom">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/installation.png" />
 			</div>
 		</div>
   		<div class="column small-6 project-small text-right">
-  			<div class="padding-right">
+  			<div class="margin-right">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/installation.png" />
 			</div>
 		</div>
@@ -32,10 +32,11 @@
 			</div>
 		</div>
   		<div class="column small-6 project-small">
-  			<div class="padding-left">
+  			<div class="margin-left">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/installation.png" />
 			</div>
 		</div>
+	</div>
   </section>
   <section class="row collapse align-center quote">
 	<div class="column small-12">

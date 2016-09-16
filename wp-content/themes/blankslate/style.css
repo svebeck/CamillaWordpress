@@ -87,13 +87,22 @@ h1.projects {
 	margin-bottom: 2rem;
 }
 
+.project-bottom{
+	position: absolute;
+	bottom: 0;
+}
+
 .project-small {
 	margin-bottom: 2rem;
 }
-.padding-left {
+.project-small-relative {
+	position: relative;
+	margin-bottom: 2rem;
+}
+.margin-left {
 	margin-left: 2rem;
 }
-.padding-right {
+.margin-right {
 	margin-right: 2rem;
 }
 .text-right {
@@ -101,7 +110,7 @@ h1.projects {
 }
 
 .blue {
-	background-color: #aaaaFF;
+	background-color: #aaaaff;
 }
 
 .gray {
@@ -171,9 +180,32 @@ aside.contact .header {
 	font-weight: 600;
 }
 
-@media only screen and (max-width: 50em) { 
+@media only screen and (max-width: 55em) { 
+	.project-bottom {
+		position: relative;
+		bottom: 0;
+	}
 	.quote, .about {
 		width: auto;
+	}
+	.margin-left{
+		margin-left: 0;		
+	}
+	.margin-right{
+		margin-right: 0;		
+	}
+	.project-small img, .project-small-relative img{
+		width: 100%;
+	}
+	.project-large {
+		margin-bottom: 0;
+	}
+	.project-small {
+		margin-bottom: 0;
+	}
+	.project-small-relative {
+		position: relative;
+		margin-bottom: 0;
 	}
 }
 
