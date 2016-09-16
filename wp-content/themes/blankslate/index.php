@@ -10,36 +10,36 @@
   <section id="projects">
   	<h1 class="projects">Senaste projekten</h1>
   	<div class="row collapse">
-  		<div class="column small-6 gray project">
+  		<div class="column small-12 medium-6 gray project">
   			<span class="title-right">Varumärkesidentitet</span>
 			<img src="<?php echo get_template_directory_uri(); ?>/images/lstk.png" />
   		</div>
-  		<div class="column small-6 project">
-  			<div class="margin-left project-bottom">
+  		<div class="column small-12 medium-6 project">
+  			<div class="margin-left project-bottom project-small">
   				<span class="title-right">Print, Magasinlayout</span>
 				<img src="<?php echo get_template_directory_uri(); ?>/images/installation.png" />
 			</div>
 		</div>
-  		<div class="column small-6 project text-right">
-  			<div class="margin-right project-right">
+  		<div class="column small-12 medium-6 project text-right">
+  			<div class="margin-right project-right project-small">
   				<span class="title-left">Koncept, digitalt</span>
 				<img src="<?php echo get_template_directory_uri(); ?>/images/installation.png" />
 			</div>
 		</div>
-  		<div class="column small-6 blue project">
+  		<div class="column small-12 medium-6 blue project">
 			<span class="title-left-down">Redesign, Fula Fisken</span>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/lstk.png" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/fulafisken.png" />
 		</div>
-  		<div class="column small-6 project text-right">
-  			<div class="project-right">
+  		<div class="column small-12 medium-6 project text-right">
+  			<div class="project-right project-small">
   				<span class="title-left">Redesign, Fula Fisken</span>
 				<img src="<?php echo get_template_directory_uri(); ?>/images/installation.png" />
 			</div>
 		</div>
-  		<div class="column small-6 project">
-  			<div class="margin-left project-left">
+  		<div class="column small-12 medium-6 project">
+  			<div class="margin-left project-left project-small">
   				<span class="title-right">Redesign, Fula Fisken</span>
-				<img src="<?php echo get_template_directory_uri(); ?>/images/installation.png" />
+				<img class="gray" src="<?php echo get_template_directory_uri(); ?>/images/lstk.png" />
 			</div>
 		</div>
 	</div>
