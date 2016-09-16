@@ -95,6 +95,12 @@ h1.projects {
 	max-width: 280px;
 }
 
+.project a, .project a:active {
+	color: black;
+	z-index: 99;
+	position: relative;
+}
+
 .project .title-right {
 	text-align: left;
 	position: absolute;

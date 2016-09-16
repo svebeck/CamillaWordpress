@@ -1,4 +1,16 @@
 <?php get_header(); ?>
+<?php 
+$args = array(
+  'numberposts' => 6,
+  'category_name' => 'Featured',
+	'orderby'   => 'meta_value_num',
+	'meta_key'  => 'num'
+);
+ 
+$latest_posts = get_posts( $args );
+
+
+ ?>
 <section id="content" role="main">
   <div class="splash">
   </div>
@@ -11,12 +23,19 @@
   	<h1 class="projects">Senaste projekten</h1>
   	<div class="row collapse">
   		<div class="column small-12 medium-6 gray project">
-  			<span class="title-right">Varumärkesidentitet</span>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/lstk.png" />
+			<?php $post = $latest_posts[0]; setup_postdata( $latest_posts[0] ); ?>
+  			<div class="title-right">
+  			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark"><?php the_field("category_short"); ?></a>
+  			</div>
+			
+			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark">
+				<img src="<?php the_field('image'); ?>" />
+			</a>
   		</div>
   		<div class="column small-12 medium-6 project">
   			<div class="margin-left project-bottom project-small">
-  				<span class="title-right">Print, Magasinlayout</span>
+			<?php $post = $latest_posts[1]; setup_postdata( $latest_posts[1] ); ?>
+  				<span class="title-right"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark"><?php the_field("category_short"); ?></a></span>
 				<img src="<?php echo get_template_directory_uri(); ?>/images/installation.png" />
 			</div>
 		</div>
@@ -54,24 +73,19 @@
   <aside class="contact hide-for-small-only hide-for-medium-only hide-for-large-only">
   	<ul>
 	  	<li class="header">E-MAIL</li>
-		<li>camilla.karlsson@medieinstitutet.se</li>
+		<li><?php echo get_option("admin_email"); ?></li>
 
 		<li class="header">BEHANCE</li>
-		<li>https://www.behance.net/c_karlssoned26</li>
+		<li><?php the_field("behance", "user_1"); ?></li>
 
 		<li class="header">TELFONNUMMER</li>
-		<li>070-6113064</li>
+		<li><?php the_field("phone", "user_1"); ?></li>
 	</ul>
   </aside>
   <section class="row collapse align-center about">
 	<div class="column small-12">
 	  	<h2>Archicienem con corrum qui ipient</h2>
-	  	<p>Archicienem con corrum qui ipient ad unditatia is endictur remporeicius sitis cum sum dusti comnihitium nus aut et plit et ut dolutem ex et quam aut pra dolumqu atiorest ma niatem illorem porercia sae. Et volent, qui doluptis int. Archicienem con corrum qui ipient ad unditatia is endictur remporeicius sitis cum sum dusti comnihitium nus aut et plit et ut dolutem ex et quam aut pra dolumqu atiorest ma niatem illorem porercia sae. Et volent, qui doluptis int
-
-		Archicienem con corrum qui ipient ad unditatia is endictur remporeicius sitis cum sum dusti comnihitium nus aut et plit et ut dolutem ex et quam aut pra dolumqu atiorest ma niatem illorem porercia sae. Et volent, qui doluptis int
-
-		Archicienem con corrum qui ipient ad unditatia is endictur remporeicius sitis cum sum dusti comnihitium nus aut et plit et ut dolutem ex et quam aut pra dolumqu atiorest ma niatem illorem porercia sae. Et volent, qui doluptis int.
-		</p>
+	  	<p><?php the_field("bio", "user_1"); ?></p>
 	</div>
 </section>
 <!-- Old Entry Code
