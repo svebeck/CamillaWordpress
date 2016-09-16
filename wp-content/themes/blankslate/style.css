@@ -225,6 +225,60 @@ aside.contact .header {
 	font-weight: 600;
 }
 
+.single h1.title {
+	font-size: 2.1875rem;
+	font-weight: 600;
+	margin-bottom: 60px;
+}
+
+.single .category {
+	font-size: 2.5rem;
+	font-weight: 300;
+	margin-top: 30px;
+}
+
+.single h2 {
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.single p {
+	font-size: 1rem;
+}
+
+.single .images {
+	margin-bottom: 100px;
+}
+
+.single .block {
+	margin-bottom: 100px;
+}
+
+.single .quote {
+	margin-bottom: 0;
+	width: auto;
+	font-size: 1.875rem;
+	font-weight: 800;
+	padding-left: 30px;
+	border-left: 10px solid black;
+}
+
+.single h3 {
+	font-size: 1.375rem;
+	font-weight: 600;
+	line-height: 2.5rem;
+}
+
+.single .info {
+	font-size: 0.875rem;
+	line-height: 0.5rem;
+}
+
+.line {
+	border-top: 1px solid #dcdcdc;
+	margin-bottom: 100px;
+}
+
 @media only screen and (max-width: 55em) { 
 	.project-bottom {
 		position: relative;
