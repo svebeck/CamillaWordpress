@@ -83,22 +83,57 @@ h1.projects {
 	font-size: 2.5rem;
 }
 
-.project-large {
+.project {
+	position: relative;
 	margin-bottom: 2rem;
+	font-size: 1rem;
+	font-weight: 400;
+	min-height: 280px;
 }
 
-.project-bottom{
+.project .title-right {
+	text-align: left;
+	position: absolute;
+	right: -195px;
+	width: 195px;
+	padding: 10px 0 0 20px;
+	border-top: 1px solid black;
+}
+
+.project .title-left {
+	text-align: right;
+	position: absolute;
+	left: -195px;
+	width: 195px;
+	padding: 10px 20px 0 0;
+	border-top: 1px solid black;
+}
+
+.project .title-left-down {
+	text-align: right;
+	position: absolute;
+	left: -195px;
+	top: 310px;
+	width: 195px;
+	padding: 10px 20px 0 0;
+	border-top: 1px solid black;
+}
+
+.project-bottom {
 	position: absolute;
 	bottom: 0;
 }
 
-.project-small {
-	margin-bottom: 2rem;
+.project-right {
+	position: absolute;
+	right: 0;
 }
-.project-small-relative {
-	position: relative;
-	margin-bottom: 2rem;
+
+.project-left {
+	position: absolute;
+	left: 0;
 }
+
 .margin-left {
 	margin-left: 2rem;
 }
@@ -110,11 +145,11 @@ h1.projects {
 }
 
 .blue {
-	background-color: #aaaaff;
+	background-color: #cde8fa;
 }
 
 .gray {
-	background-color: #aaaaaa;
+	background-color: #f4f4f4;
 }
 
 .quote {
@@ -188,24 +223,23 @@ aside.contact .header {
 	.quote, .about {
 		width: auto;
 	}
-	.margin-left{
+	.margin-left {
 		margin-left: 0;		
 	}
-	.margin-right{
+	.margin-right {
 		margin-right: 0;		
 	}
-	.project-small img, .project-small-relative img{
+	.project img {
 		width: 100%;
 	}
-	.project-large {
+	.project {
 		margin-bottom: 0;
 	}
-	.project-small {
-		margin-bottom: 0;
+	.project-right, .project-left {
+		position: inherit;
 	}
-	.project-small-relative {
-		position: relative;
-		margin-bottom: 0;
+	.title-right, .title-left, .title-left-down {
+		display: none;
 	}
 }
 
