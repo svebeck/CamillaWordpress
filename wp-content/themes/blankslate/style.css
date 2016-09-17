@@ -44,9 +44,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 .menu-burger {
-	width: 61px;
-	height: 61px;
-	background-image: url('images/menu-burger.png');
+	width: 22px;
+	height: 13px;
+	background: url('images/menu.svg') no-repeat;
 	float: right;
 }
 
@@ -66,13 +66,18 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .splash {
 }
 
+.logo {
+	width: 61px;
+	height: 61px;
+}
+
 a.arrow-up, a.arrow-down {
 	text-align:center;
 	margin-top: 100px;
 	margin-bottom: 100px;
 	width: 70px;
 	height: 37px;
-	background: url('images/arrow.png') no-repeat;
+	background: url('images/arrow-down.svg') no-repeat;
 	display: inline-block;
 }
 
@@ -95,7 +100,7 @@ h1.projects {
 
 .project {
 	position: relative;
-	margin-bottom: 2rem;
+	margin-bottom: 30px;
 	font-size: 1rem;
 	font-weight: 400;
 	min-height: 280px;
@@ -155,10 +160,10 @@ h1.projects {
 }
 
 .margin-left {
-	margin-left: 2rem;
+	margin-left: 30px;
 }
 .margin-right {
-	margin-right: 2rem;
+	margin-right: 30px;
 }
 .text-right {
 	text-align: right;
@@ -271,6 +276,7 @@ aside.contact .header {
 	font-weight: 800;
 	padding-left: 30px;
 	border-left: 10px solid black;
+	line-height: 2.3125rem;
 }
 
 .single h3 {
