@@ -17,7 +17,7 @@
 	  <?php get_template_part("projects"); ?>
 	  <section class="row collapse align-center quote">
 		<div class="column small-12">
-		  	<p class="quote-icon">“</p>
+		  	<p class="quote-icon">&#8221;</p>
 		  	<p class="quote-text"><?php the_field("quote"); ?>
 			</p>
 		</div>
@@ -40,6 +40,7 @@
 		  	<p><?php the_field("description"); ?></p>
 		</div>
 	  </section>
+		<a href="#header" class="button-up">Till toppen</a>
 	<!-- Old Entry Code
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<?php comments_template(); ?>

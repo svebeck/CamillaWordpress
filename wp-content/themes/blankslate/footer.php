@@ -2,11 +2,16 @@
 <div class="line"></div>
 <footer id="footer" class="row" role="contentinfo">
 	<div class="columns">
-		<div id="copyright">
-		<?php echo sprintf( __( '%1$s %2$s %3$s. All Rights Reserved.', 'blankslate' ), '&copy;', date( 'Y' ), esc_html( get_bloginfo( 'name' ) ) );  ?>
+		<p class="vertical-contact">Kontakt</p>
+		<div class="row profile collapse align-center">
+			<div class="column small-12 large-6">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/profile_photo.png" />
+			</div>
 		</div>
 	</div>
 </footer>
 <?php wp_footer(); ?>
+<script src="https://use.typekit.net/mto7izr.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 </body>
 </html>
