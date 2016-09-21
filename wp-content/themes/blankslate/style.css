@@ -242,13 +242,15 @@ aside.contact .header {
 
 .single p {
 	font-size: 1rem;
+	margin-bottom: 0;
 }
 
-.single .images {
-	margin-bottom: 100px;
-}
 
 .single .block {
+	margin-bottom: 60px;
+}
+
+.single .single-image {
 	margin-bottom: 100px;
 }
 
@@ -270,7 +272,6 @@ aside.contact .header {
 
 .single .info {
 	font-size: 0.875rem;
-	line-height: 0.5rem;
 }
 
 .line {
@@ -299,6 +300,7 @@ a, a:hover {
 
 footer {
 	padding: 0 80px 100px 80px;
+	overflow-x: hidden;
 }
 
 footer .row.profile .columns.profile{

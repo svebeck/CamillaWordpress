@@ -17,7 +17,7 @@ add_action( 'wp_enqueue_scripts', 'blankslate_load_scripts' );
 function blankslate_load_scripts()
 {
 	wp_enqueue_script( 'jquery' );
-  	wp_register_script('foundation', get_template_directory_uri()."/js/vendor/foundation.min.js", array('jquery'),'5.1.1',true); 
+  	wp_register_script('foundation', get_template_directory_uri()."/js/vendor/foundation.min.js"); 
   	wp_register_script('app', get_template_directory_uri()."/js/app.js"); 
   	wp_enqueue_script(array('foundation', 'app'));
 }
