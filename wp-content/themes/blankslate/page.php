@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section id="content" class="row" role="main">
+<section id="content" class="row content" role="main">
 	<div class="columns">
 	  <div class="row collapse">
 		  <div class="splash column small-12">

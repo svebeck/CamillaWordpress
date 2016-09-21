@@ -19,18 +19,27 @@ jQuery(document).ready(function($) {
 		} // End if
 	});
 
-	$('.title-left').each(function( index, element ){
-    	var width = $( this ).outerWidth();
-    	$(this).css("left", -width+"px");
-	}); 
+	resize();
 
-	$('.title-right').each(function( index, element ){
-    	var width = $( this ).outerWidth();
-    	$(this).css("right", -width+"px");
-	}); 
 
-	$('.title-left-down').each(function( index, element ){
-    	var width = $( this ).outerWidth();
-    	$(this).css("left", -width+"px");
-	}); 
+	$( window ).resize(resize);
+	
+
+	function resize() {
+
+		$('.title-left').each(function( index, element ){
+	    	var width = $( this ).outerWidth();
+	    	$(this).css("left", -width+"px");
+		}); 
+
+		$('.title-right').each(function( index, element ){
+	    	var width = $( this ).outerWidth();
+	    	$(this).css("right", -width+"px");
+		}); 
+
+		$('.title-left-down').each(function( index, element ){
+	    	var width = $( this ).outerWidth();
+	    	$(this).css("left", -width+"px");
+		}); 
+	}
 });

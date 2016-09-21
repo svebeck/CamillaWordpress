@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section id="content" class="row collapse single" role="main">
+<section id="content" class="row collapse single content" role="main">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class="column small-12">
 		<div class="category"><?php the_field("category"); ?></div>
@@ -41,12 +41,14 @@
 	</div>
 	<?php endwhile; endif; ?>
 
-		<div class="line"></div>
-
-	<?php get_template_part( 'projects' ); ?>
-
-
-		<a href="#wrapper" class="arrow-up"></a>
+	<div class="columns line"></div>
 </section>
+
+<div class="row content">
+	<div class="column">
+		<?php get_template_part( 'projects' ); ?>
+		<a href="#wrapper" class="arrow-up"></a>
+	</div>
+</div>
 
 <?php get_footer(); ?>
