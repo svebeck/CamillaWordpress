@@ -17,25 +17,16 @@ BlankSlate is distributed under the terms of the GNU GPL
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
 .sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
 
-.row {
-	max-width: 70rem !important;
-}
-
-#wrapper {
-	max-width: 1280px;
-	margin: auto;
-}
 
 #header {
+	margin: auto;
 	height: 150px;
-	padding-top: 40px;
-	margin-left: 80px;
-	margin-right: 80px;
+	padding: 40px 80px 0 80px;
 }
 
 #content {
-	margin-left: 80px;
-	margin-right: 80px;
+	margin: auto;
+	padding: 0 80px 0 80px;
 }
 
 #branding {
@@ -44,6 +35,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 .menu-burger {
+	margin-top: 20px;
 	width: 22px;
 	height: 13px;
 	background: url('images/menu.svg') no-repeat;
@@ -59,7 +51,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	overflow:hidden;
 	background-repeat: no-repeat;
 	background-size: cover;  
-	background-position: center center;
 	background-image: url('images/splash.png');
 }
 
@@ -122,7 +113,7 @@ h1.projects {
 	right: -195px;
 	width: 195px;
 	padding: 10px 0 0 20px;
-	border-top: 1px solid black;
+	border-top: 3px solid black;
 }
 
 .project .title-left {
@@ -131,7 +122,7 @@ h1.projects {
 	left: -195px;
 	width: 195px;
 	padding: 10px 20px 0 0;
-	border-top: 1px solid black;
+	border-top: 3px solid black;
 }
 
 .project .title-left-down {
@@ -141,7 +132,7 @@ h1.projects {
 	top: 310px;
 	width: 195px;
 	padding: 10px 20px 0 0;
-	border-top: 1px solid black;
+	border-top: 3px solid black;
 }
 
 .project-bottom {
@@ -180,9 +171,13 @@ h1.projects {
 .quote {
 	font-family: "Source Sans Pro", sans-serif;
 	margin: 0 auto 180px auto;
-	width: 590px;
+}
+
+.quote .column {
+	max-width: 590px;
 }
 .quote .quote-icon {
+	color: #bb3964;
 	font-weight: 600;
 	font-size: 10.625rem;
 	margin-bottom: 0;
@@ -200,8 +195,11 @@ h1.projects {
 
 .about {
 	font-family: "Source Sans Pro", sans-serif;
-	width: 590px;
-	margin: auto;
+	margin: 0 auto;
+}
+
+.about .column {
+	max-width: 590px;
 }
 
 .about h2 {
