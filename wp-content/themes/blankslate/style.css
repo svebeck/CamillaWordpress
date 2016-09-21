@@ -63,12 +63,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 a.arrow-up, a.arrow-down {
 	text-align:center;
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin: 100px auto 100px auto;
 	width: 70px;
 	height: 37px;
 	background: url('images/arrow-down.svg') no-repeat;
-	display: inline-block;
+	display: block;
 }
 
 a.arrow-up {

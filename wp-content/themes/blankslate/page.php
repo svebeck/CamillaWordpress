@@ -5,15 +5,7 @@
 		  <div class="splash column small-12">
 		  </div>
 	  </div>
-	  <div class="row collapse">
-		  <div class="column small-12">
-			  <div class="row align-center">
-			    <div class="column small-1 arrow">
-					<a href="#projects" class="arrow-down"></a>
-			    </div>
-			  </div>
-		  </div>
-	</div>
+	  <a href="#projects" class="arrow-down"></a>
 	  <?php get_template_part("projects"); ?>
 	  <section class="row collapse align-center quote">
 		<div class="column small-12">
@@ -40,7 +32,7 @@
 		  	<p><?php the_field("description"); ?></p>
 		</div>
 	  </section>
-		<a href="#header" class="button-up">Till toppen</a>
+	  <a href="#header" class="button-up">Till toppen</a>
 	<!-- Old Entry Code
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<?php comments_template(); ?>
