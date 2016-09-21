@@ -2,10 +2,23 @@
 <div class="line"></div>
 <footer id="footer" class="row" role="contentinfo">
 	<div class="columns">
-		<p class="vertical-contact">Kontakt</p>
-		<div class="row profile collapse align-center">
-			<div class="column small-12 large-6">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/profile_photo.png" />
+		<p class="vertical-contact hide-for-small-only hide-for-medium-only">Kontakt</p>
+		<div class="row profile align-center">
+			<div class="columns profile">
+			  	<div class="row collapse">
+					<div class="column small-12 large-12">
+						<p class="work-title">Digital Content Designer</p>
+						<p class="name">Camilla Karlsson</p>
+					</div>
+					<div class="column small-7 medium-6 column-social">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/profile_photo.png" />
+					</div>
+					<div class="social-stuff column small-5 medium-6  column-social">
+						<img class="social-icon social-icon-top" src="<?php echo get_template_directory_uri(); ?>/images/icon_linkedin.png" />
+						<img class="social-icon social-icon-bottom" src="<?php echo get_template_directory_uri(); ?>/images/icon_behance.png" />
+					</div>
+				</div>
+				<p class="text-center">&#169; Camilla Karlsson<br />2016</p>
 			</div>
 		</div>
 	</div>
