@@ -95,26 +95,28 @@ h1.projects {
 	font-weight: 600;
 }
 
+.project .title-left-down,
+.project .title-right,
+.project .title-left {
+	border-top: 3px solid black;
+	position: absolute;
+	max-width: 200px;
+}
+
 .project .title-right {
 	text-align: left;
-	position: absolute;
 	padding: 10px 20px 0 20px;
-	border-top: 3px solid black;
 }
 
 .project .title-left {
 	text-align: right;
-	position: absolute;
 	padding: 10px 20px 0 20px;
-	border-top: 3px solid black;
 }
 
 .project .title-left-down {
 	text-align: right;
-	position: absolute;
 	top: 310px;
 	padding: 10px 20px 0 20px;
-	border-top: 3px solid black;
 }
 
 .project-bottom {
@@ -461,6 +463,12 @@ p.name {
 	footer .copy {
 		margin-top: -5px;
 		font-size: 0.75rem;
+	}
+
+	.project .title-left-down,
+	.project .title-right,
+	.project .title-left {
+		max-width: 164px;
 	}
 }
 
