@@ -5,7 +5,7 @@
 		  <div class="splash column small-12">
 		  </div>
 	  </div>
-	  <a href="#projects" class="arrow-down hide-for-small-only"></a>
+	  <a href="#projects" class="arrow-down hide-for-small-only"><img class="svg" src="<?php echo get_template_directory_uri(); ?>/images/arrow_down.svg" /></a>
 	  <?php get_template_part("projects"); ?>
 	  <section class="row collapse align-center quote">
 		<div class="column small-12">

@@ -13,7 +13,7 @@
 	<div class="columns">
 		<section id="branding">
 			<a href="<?php echo get_home_url(); ?>">
-				<img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg"  alt="Some alt text here">
+				<img class="logo svg" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" />
 			</a>
 			<!--<div id="site-title"><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; } ?></div>-->
 			<!--<div id="site-description"><?php bloginfo( 'description' ); ?></div>-->
@@ -22,7 +22,9 @@
 		<!--<div id="search">
 		<?php get_search_form(); ?>
 		</div>-->
-		<div class="menu-burger"></div>
+		<a href="<?php echo get_home_url(); ?>">
+			<img class="menu-burger svg" src="<?php echo get_template_directory_uri(); ?>/images/menu.svg" />
+		</a>
 		<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 		</nav>
 	</div>

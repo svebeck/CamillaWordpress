@@ -36,8 +36,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	margin-top: 20px;
 	width: 22px;
 	height: 13px;
-	background: url('images/menu.svg') no-repeat;
 	float: right;
+}
+
+.menu-burger:hover {
+	fill: #fa6993;
 }
 
 .menu {
@@ -56,13 +59,19 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	width: 61px;
 	height: 61px;
 }
+.logo:hover {
+	fill: #fa6993;
+}
 
 a.arrow-down {
 	text-align:center;
 	width: 70px;
 	height: 37px;
-	background: url('images/arrow-down.svg') no-repeat;
 	display: block;
+}
+
+a.arrow-down:hover {
+	fill: #fa6993;
 }
 
 a.arrow-down {
