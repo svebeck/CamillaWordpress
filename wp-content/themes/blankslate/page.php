@@ -5,7 +5,7 @@
 		  <div class="splash column small-12">
 		  </div>
 	  </div>
-	  <a href="#projects" class="arrow-down"></a>
+	  <a href="#projects" class="arrow-down hide-for-small-only"></a>
 	  <?php get_template_part("projects"); ?>
 	  <section class="row collapse align-center quote">
 		<div class="column small-12">
@@ -14,7 +14,10 @@
 			</p>
 		</div>
 	  </section>
-	  <aside class="contact hide-for-small-only hide-for-medium-only hide-for-large-only">
+	  <div class="row collapse show-for-small-only">
+	  	<div class="line column small-12"></div>
+	  </div>
+	  <aside class="contact hide-for-medium-down">
 	  	<ul>
 		  	<li class="header">E-MAIL</li>
 			<li><?php echo get_option("admin_email"); ?></li>
@@ -32,6 +35,16 @@
 		  	<p><?php the_field("description"); ?></p>
 		</div>
 	  </section>
+	  <div class="row collapse contact show-for-medium-down align-center">
+
+	  	<ul class="columns">
+		  	<li class="header">E-MAIL</li>
+			<li><?php echo get_option("admin_email"); ?></li>
+
+			<li class="header">TELFONNUMMER</li>
+			<li><?php the_field("phone", "user_1"); ?></li>
+		</ul>
+	  </div>
 	  <a href="#header" class="button-up">Till toppen</a>
 	<!-- Old Entry Code
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

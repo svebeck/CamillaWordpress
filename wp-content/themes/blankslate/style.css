@@ -59,7 +59,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 a.arrow-up, a.arrow-down {
 	text-align:center;
-	margin: 100px auto 200px auto;
+	margin: 75px auto 185px auto;
 	width: 70px;
 	height: 37px;
 	background: url('images/arrow-down.svg') no-repeat;
@@ -83,8 +83,6 @@ h1.projects {
 .project {
 	position: relative;
 	margin-bottom: 30px;
-	font-size: 1rem;
-	font-weight: 400;
 	min-height: 280px;
 }
 
@@ -96,8 +94,8 @@ h1.projects {
 	color: black;
 	z-index: 99;
 	position: relative;
-	font-weight: 600;
 	font-size: 1rem;
+	font-weight: 600;
 }
 
 .project .title-right {
@@ -160,7 +158,7 @@ h1.projects {
 }
 
 .quote {
-	margin: 0 auto 150px auto;
+	margin: 0 auto 165px auto;
 }
 
 .quote .column {
@@ -351,6 +349,11 @@ footer .social-icon {
 	margin-left: 60px !important;
 }
 
+footer .copy {
+	margin-top: -5px;
+	font-size: 1rem;
+}
+
 p.work-title {
 	font-size: 1.5625rem;
 	font-weight: 300;
@@ -385,15 +388,77 @@ p.name {
 	#header {
 		padding: 20px 20px 20px 20px;
 	}
+
 	.content {
 		padding: 0 20px 0 20px;
 	}
+
 	footer {
 		padding: 0 20px 100px 20px;
 	}
+
 	footer .social-icon {
 		min-width: 200px;
 		margin-left: 30px !important;
+	}
+
+	h1.projects {
+		margin-bottom: 50px;
+		font-size: 1.875rem;
+	}
+
+	.splash {
+		margin-bottom: 100px;
+	}
+
+	.project a, .project a:active {
+		font-size: 0.875rem;
+	}
+
+	.quote {
+		margin-bottom: 65px;
+	}
+
+	.quote .quote-icon {
+		margin-top: 60px;
+		font-size: 8.125rem;
+		margin-left: -8px;
+		padding-left: 0;
+	}
+
+	.quote .quote-text {
+		font-size: 1.375rem;
+		padding-left: 0;
+	}
+
+	.about h2 {
+		font-size: 1.25rem;
+		font-weight: 700;
+		padding-left: 0;
+	}
+
+	.about p {
+		font-size: 1.125rem;
+		padding-left: 0;
+		margin-bottom: 0;
+		font-weight: 300;
+	}
+
+	.line {
+		margin-bottom: 50px;
+	}
+
+	p.work-title {
+		font-size: 1.25rem;
+	}
+
+	p.name {
+		font-size: 1.125rem;
+	}
+
+	footer .copy {
+		margin-top: -5px;
+		font-size: 0.75rem;
 	}
 }
 
@@ -447,6 +512,59 @@ p.name {
 
 	.hide-for-medium-down {
 		display: none !important;
+	}
+
+	.quote .quote-icon {
+		margin-left: -8px;
+		padding-left: 0;
+	}
+
+	.quote .quote-text {
+		padding-left: 0;
+	}
+
+	.about {
+		margin-bottom: 20px;
+	}
+
+	.about h2 {
+		padding-left: 0;
+	}
+
+	.about p {
+		padding-left: 0;
+
+	}
+
+	div.contact {
+		font-size: 0.875rem;
+		font-weight: 300;
+		margin-bottom: 60px;
+	}
+
+	div.contact ul {
+		margin: 0;
+		padding: 0;
+		max-width: 590px !important;
+	}
+
+	div.contact li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		font-weight: 300;
+	}
+
+	div.contact .header {
+		margin-top: 10px;
+		color: #ba3963;
+		font-size: 0.875rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	.button-up {
+		margin-bottom: 60px;
 	}
 }
 

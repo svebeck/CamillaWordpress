@@ -3,7 +3,7 @@
 <footer id="footer" class="row" role="contentinfo">
 	<div class="columns">
 		<p class="vertical-contact hide-for-small-only hide-for-medium-only">Kontakt</p>
-		<div class="row profile align-center">
+		<div class="row profile small-collapse large-uncollapse align-center">
 			<div class="columns profile">
 			  	<div class="row collapse">
 					<div class="column small-12 large-12">
@@ -18,7 +18,7 @@
 						<img class="social-icon social-icon-bottom" src="<?php echo get_template_directory_uri(); ?>/images/icon_behance.png" />
 					</div>
 				</div>
-				<p class="text-center">&#169; Camilla Karlsson<br />2016</p>
+				<p class="copy text-center">&#169; Camilla Karlsson<br />2016</p>
 			</div>
 		</div>
 	</div>
