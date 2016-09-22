@@ -59,7 +59,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 a.arrow-up, a.arrow-down {
 	text-align:center;
-	margin: 100px auto 100px auto;
+	margin: 100px auto 200px auto;
 	width: 70px;
 	height: 37px;
 	background: url('images/arrow-down.svg') no-repeat;
@@ -96,6 +96,8 @@ h1.projects {
 	color: black;
 	z-index: 99;
 	position: relative;
+	font-weight: 600;
+	font-size: 1rem;
 }
 
 .project .title-right {
@@ -166,7 +168,7 @@ h1.projects {
 }
 .quote .quote-icon {
 	color: #ba3963;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 10.625rem;
 	margin-bottom: 0;
 	margin-top: 100px;
@@ -229,7 +231,7 @@ aside.contact .header {
 
 .single h1.title {
 	font-size: 2.1875rem;
-	font-weight: 600;
+	font-weight: 700;
 	margin-bottom: 60px;
 }
 
@@ -241,7 +243,7 @@ aside.contact .header {
 
 .single h2 {
 	font-size: 1.25rem;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 .single p {
@@ -270,7 +272,7 @@ aside.contact .header {
 
 .single h3 {
 	font-size: 1.375rem;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 2.5rem;
 }
 
@@ -287,10 +289,14 @@ aside.contact .header {
 	display: block;
 	margin: 0 auto 80px;
 	width: 115px;
-	height: 35px;
+	padding: 8px 0 8px 0;
 	border: 3px solid #ba3963;
 	text-align: center;
 	color: #ba3963;
+	font-size: 0.875rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 1rem;
 }
 
 .button-up:hover {
