@@ -226,6 +226,33 @@ aside.contact .header {
 	font-weight: 600;
 }
 
+div.contact {
+	font-size: 0.875rem;
+	font-weight: 300;
+	margin-bottom: 60px;
+}
+
+div.contact ul {
+	margin: 0;
+	padding: 0;
+	max-width: 590px !important;
+}
+
+div.contact li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+}
+
+div.contact .header {
+	margin-top: 10px;
+	color: #ba3963;
+	font-size: 0.875rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
 .single h1.title {
 	font-size: 2.1875rem;
 	font-weight: 700;
@@ -470,6 +497,22 @@ p.name {
 	.project .title-left {
 		max-width: 164px;
 	}
+
+	.splash {
+		height: 258px;
+	}
+
+	.project {
+		margin-bottom: 20px !important;
+		min-height: 0;
+	}
+	footer .row.profile .row .column {
+    	margin-bottom: 20px !important;
+	}
+	footer .social-icon {
+	    min-width: 200px;
+	    margin-left: 20px !important;
+	}
 }
 
 /* Medium and up */
@@ -478,16 +521,6 @@ p.name {
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {}
-
-/* Large and up */
-@media screen and (min-width: 64em) {
-	.show-for-medium-down {
-		display: none !important;
-	}
-}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
 
 /* Medium and down */
 @media only screen and (max-width: 64em) { 
@@ -546,35 +579,36 @@ p.name {
 
 	}
 
-	div.contact {
-		font-size: 0.875rem;
-		font-weight: 300;
-		margin-bottom: 60px;
-	}
-
-	div.contact ul {
-		margin: 0;
-		padding: 0;
-		max-width: 590px !important;
-	}
-
-	div.contact li {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		font-weight: 300;
-	}
-
-	div.contact .header {
-		margin-top: 10px;
-		color: #ba3963;
-		font-size: 0.875rem;
-		font-weight: 600;
-		text-transform: uppercase;
-	}
-
 	.button-up {
 		margin-bottom: 60px;
+	}
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.show-for-medium-down {
+		display: none !important;
+	}
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+	div.contact ul li {
+		padding-left: 18px;
+	}
+}
+
+/* Large and down */
+@media only screen and (max-width: 75em) { 
+	.hide-for-large-down {
+		display: none !important;
+	}
+}
+
+/* Above Large */
+@media screen and (min-width: 75em) {
+	.show-for-large-down {
+		display: none !important;
 	}
 }
 

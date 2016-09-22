@@ -17,7 +17,7 @@
 	  <div class="row collapse show-for-small-only">
 	  	<div class="line column small-12"></div>
 	  </div>
-	  <aside class="contact hide-for-medium-down">
+	  <aside class="contact hide-for-large-down">
 	  	<ul>
 		  	<li class="header">E-MAIL</li>
 			<li><?php echo get_option("admin_email"); ?></li>
@@ -35,7 +35,7 @@
 		  	<p><?php the_field("description"); ?></p>
 		</div>
 	  </section>
-	  <div class="row collapse contact show-for-medium-down align-center">
+	  <div class="row collapse contact show-for-large-down align-center">
 
 	  	<ul class="columns">
 		  	<li class="header">E-MAIL</li>
