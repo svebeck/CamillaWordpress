@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 	$(document).foundation();
 
-	$("a").on('click', function(event) {
+	$("a").on('click touch', function(event) {
 		// Make sure this.hash has a value before overriding default behavior
 		if (this.hash !== "") {
 			// Prevent default anchor click behavior
@@ -20,11 +20,11 @@ jQuery(document).ready(function($) {
 	});
 
 
-	$('a.menu-burger').on('click', function(event) {
+	$('a.menu-burger').on('click touch', function(event) {
 	  $( ".menu-block" ).fadeIn( "fast" );
 	});
 
-	$('.menu-block').on('click', function(event) {
+	$('.menu-block').on('click touch', function(event) {
 	  $( ".menu-block" ).fadeOut( "fast" );
 	});
 	$( window ).scroll(function() {
