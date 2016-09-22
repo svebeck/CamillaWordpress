@@ -47,7 +47,7 @@
 <div class="row content">
 	<div class="column">
 		<?php get_template_part( 'projects' ); ?>
-		<a href="#wrapper" class="arrow-up"></a>
+		<a href="#wrapper" class="button-up">Till toppen</a>
 	</div>
 </div>
 

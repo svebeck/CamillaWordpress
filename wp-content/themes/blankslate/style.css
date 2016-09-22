@@ -57,19 +57,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	height: 61px;
 }
 
-a.arrow-up, a.arrow-down {
+a.arrow-down {
 	text-align:center;
-	margin: 75px auto 185px auto;
 	width: 70px;
 	height: 37px;
 	background: url('images/arrow-down.svg') no-repeat;
 	display: block;
 }
 
-a.arrow-up {
-	-ms-transform: rotate(180deg); /* IE 9 */
-    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-    transform: rotate(180deg);
+a.arrow-down {
+	margin: 75px auto 185px auto;
 }
 
 
@@ -295,6 +292,10 @@ aside.contact .header {
 	font-weight: 600;
 	text-transform: uppercase;
 	line-height: 1rem;
+}
+
+.single .button-up {
+	margin-top: 50px;
 }
 
 .button-up:hover {
