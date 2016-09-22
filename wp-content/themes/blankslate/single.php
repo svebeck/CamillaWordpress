@@ -41,7 +41,7 @@
 	</div>
 	<?php endwhile; endif; ?>
 
-	<div class="columns line"></div>
+	<div class="column small-12 line"></div>
 </section>
 
 <div class="row content">
