@@ -37,13 +37,27 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	float: right;
 }
 
-.menu-burger-icon svg:hover {
+.menu-burger-icon:hover {
 	fill: #fa6993;
 }
 
 .menu-burger-icon {
 	width: 22px;
 	height: 13px;
+}
+
+.menu-cross {
+	margin-top: 20px;
+	float: right;
+}
+
+.menu-cross-icon:hover {
+	fill: #fa6993;
+}
+
+.menu-cross-icon {
+	width: 20px;
+	height: 20px;
 }
 
 .menu-block {
@@ -71,14 +85,14 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	color: #fa6993;
 }
 
-.menu-block .menu-burger,
+.menu-block .menu-cross,
 .menu-block .logo {
 	display:block;
 	position:relative;
 	fill: white;
 }
 
-.menu-block .menu-burger{
+.menu-block .menu-cross{
 	text-align: right;
 	margin: 60px 80px 0 0;
 }
@@ -568,7 +582,7 @@ p.name {
 		font-size: 2.5rem;
 	}
 
-	.menu-block .menu-burger{
+	.menu-block .menu-cross{
 		text-align: right;
 		margin: 40px 20px 0 0;
 	}

@@ -33,8 +33,8 @@
 			</a>
 		</div>
 		<div class="column small-6">
-			<a class="menu-burger">
-				<img class="menu-burger-icon svg" src="<?php echo get_template_directory_uri(); ?>/images/cross.svg" />
+			<a class="menu-cross">
+				<img class="menu-cross-icon svg" src="<?php echo get_template_directory_uri(); ?>/images/cross.svg" />
 			</a>
 		</div>
 		<div class="column small-12">
