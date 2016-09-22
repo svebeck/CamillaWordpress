@@ -9,24 +9,41 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
+
 <header id="header" class="row collapse" role="banner">
 	<div class="columns">
 		<section id="branding">
-			<a href="<?php echo get_home_url(); ?>">
-				<img class="logo svg" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" />
+			<a class="logo" href="<?php echo get_home_url(); ?>">
+				<img class="logo-icon svg" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" />
 			</a>
-			<!--<div id="site-title"><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; } ?></div>-->
-			<!--<div id="site-description"><?php bloginfo( 'description' ); ?></div>-->
 		</section>
 		<nav id="menu" role="navigation">
-		<!--<div id="search">
-		<?php get_search_form(); ?>
-		</div>-->
-		<a href="<?php echo get_home_url(); ?>">
-			<img class="menu-burger svg" src="<?php echo get_template_directory_uri(); ?>/images/menu.svg" />
-		</a>
-		<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+			<a class="menu-burger">
+				<img class="menu-burger-icon svg" src="<?php echo get_template_directory_uri(); ?>/images/menu.svg" />
+			</a>
 		</nav>
 	</div>
 </header>
+
+<nav class="menu-block">
+	<div class="row collapse">
+		<div class="column small-6">
+			<a class="logo" href="<?php echo get_home_url(); ?>"> 
+				<img class="logo-icon svg" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" />
+			</a>
+		</div>
+		<div class="column small-6">
+			<a class="menu-burger">
+				<img class="menu-burger-icon svg" src="<?php echo get_template_directory_uri(); ?>/images/menu.svg" />
+			</a>
+		</div>
+		<div class="column small-12">
+			<ul>
+				<li><a href="#projects">Senaste projekt</a></li>
+				<li><a href="#about">Om mig</a></li>
+				<li><a class="show-for-medium-down" href="#contact1">Kontakt</a><a class="hide-for-medium-down" href="#contact2">Kontakt</a></li>
+			</ul>
+		</div>
+	</div>		
+</nav>
 <div id="container">

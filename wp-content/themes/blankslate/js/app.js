@@ -19,6 +19,18 @@ jQuery(document).ready(function($) {
 		} // End if
 	});
 
+
+	$('a.menu-burger').on('click', function(event) {
+	  $( ".menu-block" ).fadeIn( "fast" );
+	});
+
+	$('.menu-block').on('click', function(event) {
+	  $( ".menu-block" ).fadeOut( "fast" );
+	});
+	$( window ).scroll(function() {
+	  $( ".menu-block" ).fadeOut( "fast" );
+	});
+
 	 /* Replace all SVG images with inline SVG
 	 */
 	jQuery('img.svg').each(function(){
