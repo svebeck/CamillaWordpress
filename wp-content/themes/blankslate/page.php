@@ -29,7 +29,7 @@
 			<li><?php the_field("phone", "user_1"); ?></li>
 		</ul>
 	  </aside>
-	  <section class="row collapse align-center about">
+	  <section id="about" class="row collapse align-center about">
 		<div class="column small-12" large-6"">
 		  	<h2>Archicienem con corrum qui ipient</h2>
 		  	<p><?php the_field("description"); ?></p>
