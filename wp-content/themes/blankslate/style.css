@@ -37,10 +37,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	float: right;
 }
 
-.menu-burger-icon:hover {
-	fill: #fa6993;
-}
-
 .menu-burger-icon {
 	width: 22px;
 	height: 13px;
@@ -49,10 +45,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .menu-cross {
 	margin-top: 20px;
 	float: right;
-}
-
-.menu-cross-icon:hover {
-	fill: #fa6993;
 }
 
 .menu-cross-icon {
@@ -81,9 +73,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .menu-block ul a {
 	color: white;
 }
-.menu-block ul a:hover {
-	color: #fa6993;
-}
 
 .menu-block .menu-cross,
 .menu-block .logo {
@@ -111,22 +100,15 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 .logo-icon {
-	width: 61px;
-	height: 61px;
-}
-.logo-icon:hover {
-	fill: #fa6993;
+	width: 70px;
+	height: 70px;
 }
 
 a.arrow-down {
 	text-align:center;
-	width: 70px;
-	height: 37px;
+	width: 60px;
+	height: 27px;
 	display: block;
-}
-
-a.arrow-down:hover {
-	fill: #fa6993;
 }
 
 a.arrow-down {
@@ -221,7 +203,7 @@ h1.projects {
 }
 
 .quote {
-	margin: 0 auto 165px auto;
+	margin: 0 auto 200px auto;
 }
 
 .quote .column {
@@ -264,6 +246,7 @@ h1.projects {
 	font-size: 1.125rem;
 	padding-left: 18px;
 	margin-bottom: 0;
+	font-weight: 300;
 }
 
 aside.contact {
@@ -375,7 +358,7 @@ div.contact .header {
 
 .button-up {
 	display: block;
-	margin: 0 auto 80px;
+	margin: 0 auto 120px;
 	width: 115px;
 	padding: 8px 0 8px 0;
 	border: 3px solid #ba3963;
@@ -445,8 +428,9 @@ footer .social-icon {
 }
 
 footer .copy {
-	margin-top: -5px;
-	font-size: 1rem;
+	font-size: 0.875rem;
+	font-weight: 300;
+	line-height: 1.15;
 }
 
 p.work-title {

@@ -24,9 +24,6 @@
 
 			<li class="header">BEHANCE</li>
 			<li><?php the_field("behance", "user_1"); ?></li>
-
-			<li class="header">TELFONNUMMER</li>
-			<li><?php the_field("phone", "user_1"); ?></li>
 		</ul>
 	  </aside>
 	  <section id="about" class="row collapse align-center about">
@@ -40,9 +37,6 @@
 	  	<ul class="columns">
 		  	<li class="header">E-MAIL</li>
 			<li><?php echo get_option("admin_email"); ?></li>
-
-			<li class="header">TELFONNUMMER</li>
-			<li><?php the_field("phone", "user_1"); ?></li>
 		</ul>
 	  </div>
 	  <a href="#header" class="button-up">Till toppen</a>
