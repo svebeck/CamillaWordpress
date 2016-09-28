@@ -14,9 +14,6 @@
 			</p>
 		</div>
 	  </section>
-	  <div class="row collapse show-for-small-only">
-	  	<div class="line column small-12"></div>
-	  </div>
 	  <aside id="contact2" class="contact hide-for-large-down">
 	  	<ul>
 		  	<li class="header">E-MAIL</li>
