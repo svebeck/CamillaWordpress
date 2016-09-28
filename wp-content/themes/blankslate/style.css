@@ -232,6 +232,7 @@ h1.projects {
 	padding-left: 18px;
 	margin-bottom: 0;
 	line-height: 1.875rem;
+	letter-spacing: -1px;
 }
 
 .about {
@@ -308,19 +309,23 @@ div.contact .header {
 
 .single h1.title {
 	font-size: 2.1875rem;
-	font-weight: 700;
+	font-weight: 600;
 	margin-bottom: 60px;
+	line-height: 1.8rem;
+	letter-spacing: -1px;
 }
 
 .single .category {
 	font-size: 2.5rem;
 	font-weight: 300;
 	margin-top: 30px;
+	letter-spacing: -1px;
 }
 
 .single h2 {
 	font-size: 1.25rem;
-	font-weight: 700;
+	font-weight: 600;
+	margin-bottom: 0;
 }
 
 .single p {
@@ -345,16 +350,19 @@ div.contact .header {
 	padding-left: 30px;
 	border-left: 10px solid black;
 	line-height: 2.3125rem;
+	letter-spacing: -1px;
+	font-style: italic;
 }
 
 .single h3 {
 	font-size: 1.375rem;
-	font-weight: 700;
-	line-height: 2.5rem;
+	font-weight: 600;
+	line-height: 1.2rem;
 }
 
 .single .info {
 	font-size: 0.875rem;
+	margin-bottom: 52px;
 }
 
 .line {
@@ -618,6 +626,7 @@ p.name {
 	.single h1.title {
 		font-size: 1.25rem;
 		margin-bottom: 30px;
+		line-height: 1.2rem;
 	}
 
 	.single .category {
@@ -627,6 +636,26 @@ p.name {
 
 	.single .single-image {
 		margin-bottom: 50px;
+	}
+
+	.single h2 {
+		font-size: 1.125rem;
+	}
+
+	.single .quote {
+		font-size: 1.375rem;
+		line-height: 1.6rem;
+		border-left: 6px solid black;
+		padding-left: 20px;
+	}
+
+	.single h3 {
+		font-size: 1.25rem;
+		line-height: 1rem;
+	}
+
+	.single .info {
+		margin-bottom: 12px;
 	}
 }
 
