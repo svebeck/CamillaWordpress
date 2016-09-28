@@ -566,6 +566,15 @@ p.name {
 		max-width: 164px;
 	}
 
+	.project .title-left,
+	.project .title-left-down {
+		padding: 0px 10px 0 20px;
+	}
+
+	.project .title-right {
+		padding: 0px 20px 0 10px;
+	}
+
 	.splash {
 		height: 258px;
 	}
