@@ -536,7 +536,7 @@ p.name {
 	}
 
 	.quote {
-		margin-bottom: 60px;
+		padding-bottom: 60px;
 	}
 
 	.quote .quote-icon {
@@ -552,11 +552,14 @@ p.name {
 		line-height: 1.6rem;
 	}
 
+	.about {
+		padding-top: 80px;
+	}
+
 	.about h2 {
 		font-size: 1.25rem;
 		font-weight: 700;
 		padding-left: 0;
-		padding-top: 60px;
 	}
 
 	.about p {

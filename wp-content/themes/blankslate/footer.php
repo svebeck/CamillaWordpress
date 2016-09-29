@@ -4,7 +4,7 @@
 	<div class="columns">
 		<p class="vertical-contact hide-for-small-only hide-for-medium-only">Kontakt</p>
 		<div class="row profile small-collapse large-uncollapse align-center">
-			<div class="columns profile">
+			<div  id="contact2" class="columns profile">
 			  	<div class="row collapse">
 					<div class="column small-12 large-12">
 						<p class="work-title">Digital Content Designer</p>

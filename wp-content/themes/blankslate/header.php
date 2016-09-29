@@ -40,7 +40,7 @@
 		<div class="column small-12">
 			<ul>
 				<li><a href="#projects">Senaste projekt</a></li>
-				<li><a href="#about">Om mig</a></li>
+				<li><a href="<?php echo get_home_url(); ?>#about">Om mig</a></li>
 				<li><a class="show-for-medium-down" href="#contact1">Kontakt</a><a class="hide-for-medium-down" href="#contact2">Kontakt</a></li>
 			</ul>
 		</div>
