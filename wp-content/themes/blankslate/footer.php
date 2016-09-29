@@ -14,8 +14,8 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/images/profile_photo.png" />
 					</div>
 					<div class="social-stuff column small-5 medium-6  column-social">
-						<img class="social-icon social-icon-top" src="<?php echo get_template_directory_uri(); ?>/images/icon_linkedin.png" />
-						<img class="social-icon social-icon-bottom" src="<?php echo get_template_directory_uri(); ?>/images/icon_behance.png" />
+						<a href=""><img class="social-icon social-icon-top" src="<?php echo get_template_directory_uri(); ?>/images/icon_linkedin.png" /></a>
+						<a href=""><img class="social-icon social-icon-bottom" src="<?php echo get_template_directory_uri(); ?>/images/icon_behance.png" /></a>
 					</div>
 				</div>
 				<p class="copy text-center">&#169; Camilla Karlsson<br />2016</p>

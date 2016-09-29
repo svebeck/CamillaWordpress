@@ -135,6 +135,10 @@ h1.projects {
 	min-height: 280px;
 }
 
+.project img:hover {
+    opacity: 0.6;
+}
+
 .project-small {
 	max-width: 280px;
 }
@@ -209,7 +213,8 @@ h1.projects {
 }
 
 .quote {
-	margin: 0 auto 200px auto;
+	margin: 0 auto 0 auto;
+	padding-bottom: 40px;
 }
 
 .quote .column {
@@ -237,6 +242,7 @@ h1.projects {
 
 .about {
 	margin: 0 auto 70px auto;
+	padding-top: 160px;
 }
 
 .about .column {
@@ -262,6 +268,7 @@ aside.contact {
 	font-weight: 300;
 	position: absolute;
 	margin-left: -20px;
+	padding-top: 160px;
 }
 
 aside.contact ul {
@@ -389,7 +396,9 @@ div.contact .header {
 }
 
 .button-up:hover {
-	border-color: #fa6993;
+	opacity: 0.8;
+	color: white;
+	background-color: #ba3963;
 }
 
 
@@ -445,6 +454,10 @@ footer .copy {
 	font-size: 0.875rem;
 	font-weight: 300;
 	line-height: 1.15;
+}
+
+footer a:hover img {
+	opacity: 0.8;
 }
 
 p.work-title {
