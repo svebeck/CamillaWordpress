@@ -37,14 +37,14 @@
 	<div class="column small-12 medium-6"></div>
 	<div class="column small-12 medium-6 block">
 		<h3>Vill du veta mer? Hör av dig!</h3>
-		<p class="info">camilla.karlsson@medieinstitutet.se<br />070-6113064</p>
+		<p class="info">camilla.karlsson@medieinstitutet.se</p>
 	</div>
 	<?php endwhile; endif; ?>
 
 	<div class="column small-12 line"></div>
 </section>
 
-<div class="row content">
+<div class="row single content">
 	<div class="column">
 		<?php get_template_part( 'projects' ); ?>
 		<a href="#wrapper" class="button-up">Till toppen</a>

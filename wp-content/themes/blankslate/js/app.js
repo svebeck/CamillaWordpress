@@ -70,14 +70,16 @@ jQuery(document).ready(function($) {
 	        $img.replaceWith($svg);
 
 	    }, 'xml');
+	});
 
-});
+
+	$(window).load(function() {
+		resize();
+	});
+	
 
 	resize();
-
-
 	$( window ).resize(resize);
-	
 
 	function resize() {
 
@@ -96,4 +98,6 @@ jQuery(document).ready(function($) {
 	    	$(this).css("left", -width+"px");
 		}); 
 	}
+
 });
+
