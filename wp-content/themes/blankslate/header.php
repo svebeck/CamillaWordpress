@@ -7,7 +7,8 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+
+<body>
 <div id="wrapper" class="hfeed">
 
 <header id="header" class="row collapse" role="banner">

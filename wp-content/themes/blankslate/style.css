@@ -416,20 +416,17 @@ footer .row.profile .columns.profile{
 	max-width: 590px;
 }
 
-footer .row.profile img,
 footer .row.profile p {
-	padding-left: 15px;
+	margin-left: 15px;
 }
 
 footer .row.profile .row .column {
 	margin-bottom: 30px;
 }
 
-footer .column-social {
-}
-
 footer .social-stuff {
 	position: relative;
+
 }
 
 footer .social-icon-bottom {
@@ -445,9 +442,15 @@ footer .social-icon-top {
 }
 
 footer .social-icon {
+	width: 48px;
+	height: 48px;
 	color: #ba3963;
 	padding: 0 !important;
-	margin-left: 60px !important;
+	margin-left: 15px;
+}
+
+footer .first-social-icon {
+	margin-left: 15px;
 }
 
 footer .copy {
@@ -460,20 +463,34 @@ footer a:hover img {
 	opacity: 0.8;
 }
 
-p.work-title {
-	font-size: 1.5625rem;
-	font-weight: 300;
+footer p.work-title {
+	font-size: 1.875rem;
+	font-weight: 600;
 	line-height: 1.5rem;
-	padding: 0;
-	margin: 0;
+	margin-bottom: 10px;
+	padding-top: 25px;
+	border-top: 3px solid black;
+	letter-spacing: -1px;
 }
 
-p.name {
-	font-size: 1.25rem;
+footer p.name {
+	font-size: 1.5625rem;
 	line-height: 1.5rem;
-	font-weight: 900;
+	font-weight: 300;
 	padding: 0;
-	margin: 0 0 -2px 0;
+	margin-bottom: 16px;
+	color: #ba3963;
+	letter-spacing: -1px;
+}
+
+footer p {
+	font-size: 1.125rem;
+	padding-right: 10px;
+	font-weight: 300;
+}
+
+footer img {
+	padding-right: 15px;
 }
 
 .vertical-contact {
@@ -504,8 +521,13 @@ p.name {
 	}
 
 	footer .social-icon {
-		min-width: 200px;
-		margin-left: 30px !important;
+		width: 32px;
+		height: 32px;
+		margin-left: 5px;
+	}
+
+	footer .first-social-icon {
+		margin-left: 15px;
 	}
 
 	.logo {
@@ -573,12 +595,19 @@ p.name {
 		margin-bottom: 60px;
 	}
 
-	p.work-title {
-		font-size: 1.25rem;
+	footer p.work-title {
+		font-size: 1rem;
+		margin-bottom: -5px;
+		padding-top: 10px;
 	}
 
-	p.name {
-		font-size: 1.125rem;
+	footer p.name {
+		font-size: 0.875rem;
+		margin-bottom: 5px;
+	}
+
+	footer p {
+		font-size: 0.75rem;
 	}
 
 	footer .copy {
@@ -611,10 +640,6 @@ p.name {
 	}
 	footer .row.profile .row .column {
     	margin-bottom: 20px !important;
-	}
-	footer .social-icon {
-	    min-width: 200px;
-	    margin-left: 20px !important;
 	}
 	.menu-block ul {
 		margin: 20px 20px;
