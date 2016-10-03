@@ -154,6 +154,7 @@ h1.projects {
 .project .title-left-down,
 .project .title-right,
 .project .title-left {
+	max-width: 200px;
 	border-top: 3px solid black;
 	position: absolute;
 }
@@ -499,7 +500,7 @@ footer img {
 .vertical-contact {
 	position: absolute;
 	left: 15px;
-	margin-top: 170px;
+	margin-top: 120px;
 	font-size: 40px !important;
 	font-weight: 900;
     -ms-transform: rotate(-90deg); /* IE 9 */
@@ -601,12 +602,19 @@ footer img {
 	.hide-for-large-down {
 		display: none !important;
 	}
+
 }
 
 /* Above Large */
 @media screen and (min-width: 75em) {
 	.show-for-large-down {
 		display: none !important;
+	}
+
+	.project .title-left-down,
+	.project .title-right,
+	.project .title-left {
+		max-width: 500px;
 	}
 }
 
