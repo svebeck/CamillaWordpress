@@ -72,10 +72,7 @@ jQuery(document).ready(function($) {
 	    }, 'xml');
 	});
 
-	resize();
-
 	$(window).load(function() {
-		resize();
 	    setTimeout(function() {
 			resize();
     	}, 100);
@@ -85,21 +82,21 @@ jQuery(document).ready(function($) {
 	$( window ).resize(resize);
 
 	function resize() {
-
+		
 		$('.title-left').each(function( index, element ){
 	    	var width = $( this ).outerWidth();
-	    	$(this).css("left", -width+"px");
+	    	$(this).css("margin-left", -width+"px");
 		}); 
 
 		$('.title-right').each(function( index, element ){
 	    	var width = $( this ).outerWidth();
-	    	$(this).css("right", -width+"px");
+	    	$(this).css("margin-right", -width+"px");
 		}); 
 
 		$('.title-left-down').each(function( index, element ){
 	    	var width = $( this ).outerWidth();
-	    	$(this).css("left", -width+"px");
-		}); 
+	    	$(this).css("margin-left", -width+"px");
+		});
 	}
 
 });
