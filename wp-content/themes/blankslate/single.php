@@ -5,12 +5,20 @@
 		<div class="category"><?php the_field("category"); ?></div>
 		<h1 class="title"><?php the_title(); ?></h1>
 	</div>
-	<div class="column small-6 single-image">
-		<img src="<?php the_field('image'); ?>" style="background-color:<?php the_field('image_background_color');?>">
-	</div>
-	<div class="column small-6 single-image" style="background-color:<?php the_field('image2_background_color');?>">
-		<img src="<?php the_field('image2'); ?>" />
-	</div>
+
+	<?php if ( get_field('has_full_image') ) : ?> 
+		<div class="column small-12 full-image">
+			<img src="<?php the_field('full_image'); ?>">
+		</div>
+	<?php else: ?>
+		<div class="column small-6 single-image">
+			<img src="<?php the_field('image'); ?>" style="background-color:<?php the_field('image_background_color');?>">
+		</div>
+		<div class="column small-6 single-image" style="background-color:<?php the_field('image2_background_color');?>">
+			<img src="<?php the_field('image2'); ?>" />
+		</div>
+	<?php endif; ?>
+
 	<div class="column small-12 medium-6 block">
 		<h2>Klient</h2>
 		<p><?php the_field("client"); ?></p>
@@ -21,10 +29,24 @@
 		<p><?php the_field("mission"); ?></p>
 	</div>
 	<div class="column small-12 medium-6"></div>
-	<div class="column small-12 medium-6"></div>
-	<div class="column small-12 medium-6 block">
-		<p class="quote"><?php the_field("quote"); ?></p>
-	</div>
+
+	<?php if ( get_field('has_quote') ) : ?> 
+		<div class="column small-12 medium-6"></div>
+		<div class="column small-12 medium-6 block">
+			<p class="quote"><?php the_field("quote"); ?></p>
+		</div>
+	<?php endif; ?> 
+
+	<?php if ( get_field('has_picture_group') ) : ?>
+		<div class="column small-6 group-large-image">
+			<img src="<?php the_field('group_image_1'); ?>">
+		</div>
+		<div class="column small-6 group-medium-image">
+			<img src="<?php the_field('group_image_2'); ?>" />
+			<img src="<?php the_field('group_image_3'); ?>" />
+		</div>
+	<?php endif; ?>
+
 	<div class="column small-12 medium-6 block">
 		<h2>Lösning</h2>
 		<p><?php the_field("solution"); ?></p>
