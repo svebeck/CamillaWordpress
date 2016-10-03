@@ -72,13 +72,16 @@ jQuery(document).ready(function($) {
 	    }, 'xml');
 	});
 
+	resize();
 
 	$(window).load(function() {
 		resize();
+	    setTimeout(function() {
+			resize();
+    	}, 100);
 	});
 	
 
-	resize();
 	$( window ).resize(resize);
 
 	function resize() {
