@@ -8,7 +8,9 @@
 
 	<?php if ( get_field('has_full_image') ) : ?> 
 		<div class="column small-12 full-image">
-			<img class="lightbox-html" src="<?php the_field('full_image'); ?>">
+			<a class="fancybox" rel="group" href="<?php the_field('full_image'); ?>">
+				<img src="<?php the_field('full_image'); ?>">
+			</a>
 		</div>
 	<?php else: ?>
 		<div class="column small-6 single-image">
@@ -53,11 +55,17 @@
 
 	<?php if ( get_field('has_picture_group') ) : ?>
 		<div class="column small-6 group-large-image">
-			<img src="<?php the_field('group_image_1'); ?>">
+			<a class="fancybox" rel="group2" href="<?php the_field('group_image_1'); ?>">
+				<img src="<?php the_field('group_image_1'); ?>">
+			</a>
 		</div>
 		<div class="column small-6 group-medium-image block">
-			<img src="<?php the_field('group_image_2'); ?>" />
-			<img src="<?php the_field('group_image_3'); ?>" />
+			<a class="fancybox" rel="group2" href="<?php the_field('group_image_2'); ?>">
+				<img src="<?php the_field('group_image_2'); ?>" />
+			</a>
+			<a class="fancybox" rel="group2" href="<?php the_field('group_image_3'); ?>">
+				<img src="<?php the_field('group_image_3'); ?>" />
+			</a>
 		</div>
 	<?php endif; ?>
 

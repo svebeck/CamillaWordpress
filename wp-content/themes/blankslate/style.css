@@ -835,3 +835,8 @@ footer img {
 	}
 }
 
+
+/* Fancy Box Override */
+.fancybox-skin {
+	border-radius: 0 !important;	
+}

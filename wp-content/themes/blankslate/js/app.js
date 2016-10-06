@@ -25,7 +25,6 @@ jQuery(document).ready(function($) {
 		} // End if
 	});
 
-
 	$(".fancybox").fancybox();
 
 
@@ -81,7 +80,7 @@ jQuery(document).ready(function($) {
 
 	$('.lightbox-html').click(function(){
 		var html = $(this).parent().html();
-		$.fancybox({ content:  html });
+		$.fancybox({ scrolling: "no", content:  html });
 
 	});
 	
