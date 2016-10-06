@@ -3,6 +3,9 @@
 	<div class="columns">
 	  <div class="row collapse">
 		  <div class="splash column small-12">
+		  	<p class="camilla">camilladesign</p>
+		  	<p class="portfolio">portfolio 2016</p>
+		  	<div class="fat-line"></div>
 		  </div>
 	  </div>
 	  <a href="#projects" class="arrow-down hide-for-small-only"><img class="svg" src="<?php echo get_template_directory_uri(); ?>/images/arrow_down.svg" /></a>
@@ -25,7 +28,7 @@
 	  </aside>
 	  <section id="about" class="row collapse align-center about">
 		<div class="column small-12" large-6"">
-		  	<h2>Archicienem con corrum qui ipient</h2>
+		  	<h2>Om mig, några rader.</h2>
 		  	<p><?php the_field("description"); ?></p>
 		</div>
 	  </section>

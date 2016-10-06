@@ -8,14 +8,28 @@
 
 	<?php if ( get_field('has_full_image') ) : ?> 
 		<div class="column small-12 full-image">
-			<img src="<?php the_field('full_image'); ?>">
+			<img class="lightbox-html" src="<?php the_field('full_image'); ?>">
 		</div>
 	<?php else: ?>
 		<div class="column small-6 single-image">
-			<img src="<?php the_field('image'); ?>" style="background-color:<?php the_field('image_background_color');?>">
+			<?php 
+
+			if ( get_field('has_video') ) : 
+			?> 
+				<video class="lightbox-html video" id="video1" onclick="playPause()">
+				  <source src="<?php the_field('video'); ?>" type="video/mp4">
+					Your browser does not support the video tag.
+				</video> 
+			<?php else: ?>
+				<a class="fancybox" rel="group" href="<?php the_field('image'); ?>">
+					<img src="<?php the_field('image'); ?>" style="background-color:<?php the_field('image_background_color');?>">
+				</a>
+			<?php endif; ?>
 		</div>
 		<div class="column small-6 single-image" style="background-color:<?php the_field('image2_background_color');?>">
-			<img src="<?php the_field('image2'); ?>" />
+			<a class="fancybox" rel="group" href="<?php the_field('image2'); ?>">
+				<img src="<?php the_field('image2'); ?>" />
+			</a>
 		</div>
 	<?php endif; ?>
 
@@ -41,7 +55,7 @@
 		<div class="column small-6 group-large-image">
 			<img src="<?php the_field('group_image_1'); ?>">
 		</div>
-		<div class="column small-6 group-medium-image">
+		<div class="column small-6 group-medium-image block">
 			<img src="<?php the_field('group_image_2'); ?>" />
 			<img src="<?php the_field('group_image_3'); ?>" />
 		</div>

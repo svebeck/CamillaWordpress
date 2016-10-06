@@ -26,6 +26,9 @@ jQuery(document).ready(function($) {
 	});
 
 
+	$(".fancybox").fancybox();
+
+
 	$('a.menu-burger').on('click touch', function(event) {
 	  $( ".menu-block" ).fadeIn( "fast" );
 	});
@@ -73,9 +76,13 @@ jQuery(document).ready(function($) {
 	});
 
 	$(window).load(function() {
-	    setTimeout(function() {
-			resize();
-    	}, 100);
+		resize();
+	});
+
+	$('.lightbox-html').click(function(){
+		var html = $(this).parent().html();
+		$.fancybox({ content:  html });
+
 	});
 	
 
@@ -84,20 +91,37 @@ jQuery(document).ready(function($) {
 	function resize() {
 		
 		$('.title-left').each(function( index, element ){
-	    	var width = $( this ).outerWidth();
+	    	var width = $( this ).outerWidth()-1;
 	    	$(this).css("margin-left", -width+"px");
 		}); 
 
 		$('.title-right').each(function( index, element ){
-	    	var width = $( this ).outerWidth();
+	    	var width = $( this ).outerWidth()-1;
 	    	$(this).css("margin-right", -width+"px");
 		}); 
 
 		$('.title-left-down').each(function( index, element ){
-	    	var width = $( this ).outerWidth();
+	    	var width = $( this ).outerWidth()-1;
 	    	$(this).css("margin-left", -width+"px");
 		});
+
+	    setTimeout(function() {
+			resize();
+    	}, 200);
 	}
 
+	$('.video').click(function() {
+
+		var el = $('.fancybox-overlay .video').get(0);
+	    if (el.paused) 
+	    {
+	        el.play(); 
+	    }
+	    else 
+	    {
+	        el.pause(); 
+	    }
+	});
 });
+
 
