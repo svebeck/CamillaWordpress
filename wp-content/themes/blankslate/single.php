@@ -13,12 +13,15 @@
 			</a>
 		</div>
 	<?php else: ?>
-		<div class="column small-6 single-image">
+		<div class="column small-12 medium-6 single-image">
 			<?php 
 
 			if ( get_field('has_video') ) : 
 			?> 
-				<video class="lightbox-html video" id="video1" onclick="playPause()">
+				<a href="#video1" rel="group" class="fancybox">
+					<img src="<?php the_field('image'); ?>" style="background-color:<?php the_field('image_background_color');?>">
+				</a>
+				<video class="video" id="video1" style="display:none;" onclick="playPause()">
 				  <source src="<?php the_field('video'); ?>" type="video/mp4">
 					Your browser does not support the video tag.
 				</video> 
@@ -28,7 +31,7 @@
 				</a>
 			<?php endif; ?>
 		</div>
-		<div class="column small-6 single-image" style="background-color:<?php the_field('image2_background_color');?>">
+		<div class="column small-12 medium-6 single-image" style="background-color:<?php the_field('image2_background_color');?>">
 			<a class="fancybox" rel="group" href="<?php the_field('image2'); ?>">
 				<img src="<?php the_field('image2'); ?>" />
 			</a>

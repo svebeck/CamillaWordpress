@@ -85,7 +85,7 @@ jQuery(document).ready(function($) {
 	});
 	
 
-	$( window ).resize(resize);
+	//$( window ).resize(resize);
 
 	function resize() {
 		

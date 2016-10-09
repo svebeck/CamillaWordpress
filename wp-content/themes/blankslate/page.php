@@ -1,11 +1,8 @@
 <?php get_header(); ?>
 <section id="content" class="row content" role="main">
-	<div class="columns">
+	<div class="column">
 	  <div class="row collapse">
 		  <div class="splash column small-12">
-		  	<p class="camilla">camilladesign</p>
-		  	<p class="portfolio">portfolio 2016</p>
-		  	<div class="fat-line"></div>
 		  </div>
 	  </div>
 	  <a href="#projects" class="arrow-down hide-for-small-only"><img class="svg" src="<?php echo get_template_directory_uri(); ?>/images/arrow_down.svg" /></a>
