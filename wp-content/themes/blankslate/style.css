@@ -947,5 +947,10 @@ footer img {
 
 /* Fancy Box Override */
 .fancybox-skin {
-	border-radius: 0 !important;	
+	border-radius: 0 !important;
+	padding: 2px !important;	
+}
+
+.fancybox-inner {
+	background: white !important;
 }

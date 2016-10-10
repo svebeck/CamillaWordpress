@@ -1,4 +1,5 @@
 <?php
+
 add_action( 'after_setup_theme', 'blankslate_setup' );
 function blankslate_setup()
 {

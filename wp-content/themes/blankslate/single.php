@@ -25,7 +25,7 @@
 				</a>
 				<div id="video1" class="video-box" style="display:none;" >
 					<video class="video" loop>
-					  <source src="<?php the_field('video'); ?>" type="video/mp4">
+					  <source src="<?php echo get_template_directory_uri(); ?>/videos/<?php the_field('video'); ?>" type="video/mp4">
 						Your browser does not support the video tag.
 					</video> 
 					<button class="play-button" data-video-id="#video1"></button>
@@ -62,8 +62,12 @@
 			<img src="<?php the_field('group_image_1'); ?>">
 		</div>
 		<div class="column small-12 medium-6 group-medium-image block">
+		<?php if ( get_field('has_large_group_image') ) : ?>
+			<img src="<?php the_field('large_group_image'); ?>" />
+		<?php else: ?>
 			<img src="<?php the_field('group_image_2'); ?>" />
 			<img src="<?php the_field('group_image_3'); ?>" />
+		<?php endif; ?>
 		</div>
 	<?php endif; ?>
 
@@ -83,7 +87,7 @@
 	</div>
 	<?php endwhile; endif; ?>
 
-	<div class="columns line"></div>
+	<div class="column small-12 line"></div>
 </section>
 
 <div class="row single content">
