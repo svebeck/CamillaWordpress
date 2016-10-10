@@ -583,6 +583,7 @@ footer img {
 		padding-left: 0;
 	}
 
+	.quote .quote-author,
 	.quote .quote-text {
 		padding-left: 0;
 	}
@@ -712,6 +713,10 @@ footer img {
 		font-size: 1.375rem;
 		padding-left: 0;
 		line-height: 1.6rem;
+	}
+
+	.quote .quote-author {
+		padding-left: 0;
 	}
 
 	.about {
