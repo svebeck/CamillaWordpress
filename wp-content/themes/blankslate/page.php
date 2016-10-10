@@ -14,8 +14,8 @@
 		<section class="row collapse align-center quote">
 			<div class="column small-12">
 				<p class="quote-icon">&#8221;</p>
-				<p class="quote-text"><?php the_field("quote"); ?>
-				</p>
+				<p class="quote-text"><?php the_field("quote"); ?></p>
+				<p class="quote-author"><?php the_field("quote_author"); ?></p>
 			</div>
 		</section>
 	</div>
