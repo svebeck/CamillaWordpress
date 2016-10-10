@@ -104,6 +104,34 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	background-image: url('images/splash.png');
 }
 
+.site-name {
+	margin-top: 140px;
+	margin-right: 175px;
+	text-align: right;
+	font-size: 3.125rem;
+	font-weight: 600;
+	letter-spacing: -1.2px;
+	line-height: 0.8;
+	padding: 0;
+}
+
+.site-text {
+	margin-right: 175px;
+	text-align: right;
+	font-size: 2.1875rem;
+	font-weight: 300;
+	letter-spacing: -1.2px;
+	line-height: 1;
+	padding: 0;
+}
+
+.thick-line {
+	border-top: 3px solid black;
+	width: 140px;
+	float: right;
+	margin-right: 170px;
+}
+
 .logo {
     display: block;
     width: 70px;
@@ -352,6 +380,24 @@ video {
 	height: 100%;
 }
 
+.video-box {
+	position: relative;
+	width: 100%;
+	display:block;
+}
+
+.play-button {
+	position: absolute;
+	background-size: 96px 96px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/play_button.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	top: 0;
+	left: 0	;
+}
+
 .single h2 {
 	font-size: 1.25rem;
 	font-weight: 600;
@@ -543,6 +589,17 @@ footer img {
 		position: relative;
 		bottom: 0;
 	}
+
+	.site-name,
+	.site-text,
+	.thick-line {
+		margin-right: 80px;
+	}
+
+	.splash {
+		background-position: 20%;
+	}
+
 	.margin-left {
 		margin-left: 0;		
 	}
@@ -688,7 +745,29 @@ footer img {
 		font-size: 1.875rem;
 	}
 
+	.site-name {
+		margin-top: 80px;
+		font-size: 1.875rem;
+		line-height: 0.58;
+	}
+
+	.site-text {
+		font-size: 1.25rem;
+		line-height: 0.58;
+	}
+
+	.site-name,
+	.site-text,
+	.thick-line {
+		margin-right: 30px;
+	}
+
+	.thick-line {
+		width: 75px;
+	}
+
 	.splash {
+		height: 258px;
 		margin-bottom: 100px;
 		background-position: 20%;
 	}
@@ -775,10 +854,6 @@ footer img {
 		padding: 0px 20px 0 10px;
 	}
 
-	.splash {
-		height: 258px;
-	}
-
 	.project {
 		margin-bottom: 20px !important;
 		min-height: 0;
@@ -859,6 +934,13 @@ footer img {
 	.project .title-left {
 		max-width: 140px;
 	}
+
+	.site-name,
+	.site-text,
+	.thick-line {
+		margin-right: 20px;
+	}
+
 	body { -webkit-text-size-adjust:100%; -moz-text-size-adjust:100%; -ms-text-size-adjust:100%; } 
 }
 

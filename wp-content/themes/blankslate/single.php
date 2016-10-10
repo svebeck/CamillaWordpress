@@ -8,14 +8,10 @@
 
 	<?php if ( get_field('has_full_image') ) : ?> 
 		<div class="column small-12 hide-for-small-only full-image">
-			<a class="fancybox" rel="group" href="<?php the_field('full_image'); ?>">
-				<img src="<?php the_field('full_image'); ?>">
-			</a>
+			<img src="<?php the_field('full_image'); ?>" />
 		</div>
 		<div class="column small-12 show-for-small-only single-image">
-			<a class="fancybox" rel="group" href="<?php the_field('featured_image'); ?>">
-				<img src="<?php the_field('featured_image'); ?>">
-			</a>
+			<img src="<?php the_field('featured_image'); ?>" />
 		</div>
 	<?php else: ?>
 		<div class="column small-12 medium-6">
@@ -23,23 +19,23 @@
 
 			if ( get_field('has_video') ) : 
 			?> 
-				<a href="#video1" rel="group" class="fancybox">
-					<img src="<?php the_field('image'); ?>" style="background-color:<?php the_field('image_background_color');?>">
+				<a href="#video1" class="video-box fancybox" rel="group">
+					<img src="<?php the_field('image'); ?>" style="background-color:<?php the_field('image_background_color');?>" />
+					<button class="play-button" data-video-id="#video1"></button>
 				</a>
-				<video class="video" id="video1" style="display:none;" onclick="playPause()">
-				  <source src="<?php the_field('video'); ?>" type="video/mp4">
-					Your browser does not support the video tag.
-				</video> 
+				<div id="video1" class="video-box" style="display:none;" >
+					<video class="video" loop>
+					  <source src="<?php the_field('video'); ?>" type="video/mp4">
+						Your browser does not support the video tag.
+					</video> 
+					<button class="play-button" data-video-id="#video1"></button>
+				</div>
 			<?php else: ?>
-				<a class="fancybox" rel="group" href="<?php the_field('image'); ?>">
-					<img src="<?php the_field('image'); ?>" style="background-color:<?php the_field('image_background_color');?>">
-				</a>
+				<img src="<?php the_field('image'); ?>" style="background-color:<?php the_field('image_background_color');?>" />
 			<?php endif; ?>
 		</div>
 		<div class="column small-12 medium-6 single-image" style="background-color:<?php the_field('image2_background_color');?>">
-			<a class="fancybox" rel="group" href="<?php the_field('image2'); ?>">
-				<img src="<?php the_field('image2'); ?>" />
-			</a>
+			<img src="<?php the_field('image2'); ?>" />
 		</div>
 	<?php endif; ?>
 
@@ -63,17 +59,11 @@
 
 	<?php if ( get_field('has_picture_group') ) : ?>
 		<div class="column small-12 medium-6 group-large-image">
-			<a class="fancybox" rel="group2" href="<?php the_field('group_image_1'); ?>">
-				<img src="<?php the_field('group_image_1'); ?>">
-			</a>
+			<img src="<?php the_field('group_image_1'); ?>">
 		</div>
 		<div class="column small-12 medium-6 group-medium-image block">
-			<a class="fancybox" rel="group2" href="<?php the_field('group_image_2'); ?>">
-				<img src="<?php the_field('group_image_2'); ?>" />
-			</a>
-			<a class="fancybox" rel="group2" href="<?php the_field('group_image_3'); ?>">
-				<img src="<?php the_field('group_image_3'); ?>" />
-			</a>
+			<img src="<?php the_field('group_image_2'); ?>" />
+			<img src="<?php the_field('group_image_3'); ?>" />
 		</div>
 	<?php endif; ?>
 

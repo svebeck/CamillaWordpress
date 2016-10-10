@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 <section id="content" class="row collapse content" role="main">
 	<div class="splash column small-12">
+		<p class="site-name">camilladesign</p>
+		<p class="site-text">portfolio 2016</p>
+		<div class="thick-line"></div>
 	</div>
 </section>
 <section class="row content">

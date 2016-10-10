@@ -114,16 +114,18 @@ jQuery(document).ready(function($) {
     	}
 	}
 
-	$('.video').click(function() {
-
-		var el = $('.fancybox-overlay .video').get(0);
+	$('.play-button').click(function() {
+		var el = $('.fancybox-overlay video').get(0);
+		var play_button = $('.fancybox-overlay .play-button');
 	    if (el.paused) 
 	    {
 	        el.play(); 
+	        play_button.css('opacity', 0);
 	    }
 	    else 
 	    {
 	        el.pause(); 
+	        play_button.css('opacity', 1);
 	    }
 	});
 });
