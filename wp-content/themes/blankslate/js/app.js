@@ -75,7 +75,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$(window).load(function() {
-		resize();
+		resize(true);
 	});
 
 	$('.lightbox-html').click(function(){
@@ -83,11 +83,13 @@ jQuery(document).ready(function($) {
 		$.fancybox({ scrolling: "no", content:  html });
 
 	});
+
+	resize(false);
 	
 
 	//$( window ).resize(resize);
 
-	function resize() {
+	function resize(loop) {
 		
 		$('.title-left').each(function( index, element ){
 	    	var width = $( this ).outerWidth()-1;
@@ -104,9 +106,12 @@ jQuery(document).ready(function($) {
 	    	$(this).css("margin-left", -width+"px");
 		});
 
-	    setTimeout(function() {
-			resize();
-    	}, 200);
+		if (loop)
+		{
+		    setTimeout(function() {
+				resize(true);
+	    	}, 200);
+    	}
 	}
 
 	$('.video').click(function() {

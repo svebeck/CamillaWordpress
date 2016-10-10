@@ -27,6 +27,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	padding: 0 80px 0 80px;
 }
 
+.about,
+#contact1 {
+	padding: 0 80px 0 80px;
+}
+
 #branding {
 	display:inline;
 	float: left;
@@ -635,6 +640,8 @@ footer img {
 		padding: 20px 20px 20px 20px;
 	}
 
+	.about,
+	#contact1,
 	.content {
 		padding: 0 20px 0 20px;
 	}
@@ -674,6 +681,7 @@ footer img {
 
 	.splash {
 		margin-bottom: 100px;
+		background-position: 20%;
 	}
 
 	.project a, .project a:hover, .project a:active {
@@ -800,6 +808,7 @@ footer img {
 		margin-top: 10px;
 	}
 
+	.single .full-image,
 	.single .single-image {
 		margin-bottom: 50px;
 	}
@@ -823,6 +832,10 @@ footer img {
 	.single .info {
 		margin-bottom: 12px;
 	}
+
+	.about .column {
+		max-width: auto;
+	}
 }
 
 /* Extra Small Only*/
@@ -831,8 +844,9 @@ footer img {
 	.project .title-left-down,
 	.project .title-right,
 	.project .title-left {
-		max-width: 120px;
+		max-width: 140px;
 	}
+	body { -webkit-text-size-adjust:100%; -moz-text-size-adjust:100%; -ms-text-size-adjust:100%; } 
 }
 
 

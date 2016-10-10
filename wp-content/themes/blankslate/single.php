@@ -7,13 +7,18 @@
 	</div>
 
 	<?php if ( get_field('has_full_image') ) : ?> 
-		<div class="column small-12 full-image">
+		<div class="column small-12 hide-for-small-only full-image">
 			<a class="fancybox" rel="group" href="<?php the_field('full_image'); ?>">
 				<img src="<?php the_field('full_image'); ?>">
 			</a>
 		</div>
+		<div class="column small-12 show-for-small-only single-image">
+			<a class="fancybox" rel="group" href="<?php the_field('featured_image'); ?>">
+				<img src="<?php the_field('featured_image'); ?>">
+			</a>
+		</div>
 	<?php else: ?>
-		<div class="column small-12 medium-6 single-image">
+		<div class="column small-12 medium-6">
 			<?php 
 
 			if ( get_field('has_video') ) : 
@@ -57,12 +62,12 @@
 	<?php endif; ?> 
 
 	<?php if ( get_field('has_picture_group') ) : ?>
-		<div class="column small-6 group-large-image">
+		<div class="column small-12 medium-6 group-large-image">
 			<a class="fancybox" rel="group2" href="<?php the_field('group_image_1'); ?>">
 				<img src="<?php the_field('group_image_1'); ?>">
 			</a>
 		</div>
-		<div class="column small-6 group-medium-image block">
+		<div class="column small-12 medium-6 group-medium-image block">
 			<a class="fancybox" rel="group2" href="<?php the_field('group_image_2'); ?>">
 				<img src="<?php the_field('group_image_2'); ?>" />
 			</a>
@@ -88,11 +93,11 @@
 	</div>
 	<?php endwhile; endif; ?>
 
-	<div class="column small-12 line"></div>
+	<div class="columns line"></div>
 </section>
 
 <div class="row single content">
-	<div class="column">
+	<div class="columns">
 		<?php get_template_part( 'projects' ); ?>
 		<a href="#wrapper" class="button-up">Till toppen</a>
 	</div>
