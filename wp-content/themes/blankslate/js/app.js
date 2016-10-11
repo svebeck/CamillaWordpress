@@ -115,20 +115,21 @@ jQuery(document).ready(function($) {
 	}
 
 	$('.play-button').click(function() {
+		var el = $('video').get(0);
+		var fullscreen = $(this).data('video-fullscreen');
+
 	    setTimeout(function() {
-			var el = $('.fancybox-overlay video').get(0);
 			var play_button = $('.fancybox-overlay .play-button');
-		    if (el.paused) 
-		    {
-		        el.play(); 
-		        play_button.css('opacity', 0);
-		    }
-		    else 
-		    {
-		        el.pause(); 
-		        play_button.css('opacity', 1);
-		    }
-    	}, 50);
+	    	if (el.paused)
+	    	{
+        		el.play(); 
+	    	}
+        	else
+        	{
+        		el.pause();
+        	}
+    	},100);
+
 	});
 });
 

@@ -24,11 +24,10 @@
 					<button class="play-button" data-video-id="#video1"></button>
 				</a>
 				<div id="video1" class="video-box" style="display:none;" >
-					<video class="video" loop>
+					<video class="video" controls loop>
 					  <source src="<?php echo get_template_directory_uri(); ?>/videos/<?php the_field('video'); ?>" type="video/mp4">
 						Your browser does not support the video tag.
 					</video> 
-					<button class="play-button" data-video-id="#video1"></button>
 				</div>
 			<?php else: ?>
 				<img src="<?php the_field('image'); ?>" style="background-color:<?php the_field('image_background_color');?>" />
