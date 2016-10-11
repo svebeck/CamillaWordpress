@@ -24,7 +24,7 @@
 					<button class="play-button" data-video-id="#video1"></button>
 				</a>
 				<div id="video1" class="video-container" style="display:none;" >
-					<video class="video" controls loop>
+					<video class="video" controls>
 					  <source src="<?php echo get_template_directory_uri(); ?>/videos/<?php the_field('video'); ?>" type="video/mp4">
 						Your browser does not support the video tag.
 					</video> 
