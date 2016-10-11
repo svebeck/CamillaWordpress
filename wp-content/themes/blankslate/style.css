@@ -375,6 +375,10 @@ div.contact .header {
 	letter-spacing: -1px;
 }
 
+.video-container {
+	height:100%;
+}
+
 video {
 	width: 100%;
 	height: 95%;
@@ -382,7 +386,7 @@ video {
 
 .video-box {
 	position: relative;
-	height: 100%;
+	width: 100%;
 	display:block;
 }
 
