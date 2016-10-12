@@ -106,6 +106,19 @@ jQuery(document).ready(function($) {
 	    	$(this).css("margin-left", -width+"px");
 		});
 
+		var $splash = $('.splash');
+
+		if ($splash.length > 0)
+		{
+			var height = $splash.css('max-height').replace('px','');
+			var window_height = window.innerHeight;
+			if (window_height < 800)
+			{
+				height = height - (800-window_height);
+			}
+			$splash.css('height', height+'px');
+		}
+
 		if (loop)
 		{
 		    setTimeout(function() {

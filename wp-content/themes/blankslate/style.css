@@ -98,6 +98,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 .splash {
 	height: 500px;
+	max-height: 550px;
+	min-height: 450px;
 	overflow:hidden;
 	background-repeat: no-repeat;
 	background-size: cover;  
@@ -145,13 +147,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 a.arrow-down {
 	text-align:center;
-	width: 60px;
-	height: 27px;
+	width: 50px;
+	height: 20px;
 	display: block;
-}
-
-a.arrow-down {
-	margin: 75px auto 185px auto;
+	margin: 50px auto 185px auto;
 }
 
 
@@ -700,6 +699,12 @@ footer img {
 	.project .title-left {
 		max-width: 500px;
 	}
+
+	a.arrow-down {
+		width: 60px;
+		height: 28px;
+		margin-top: 75px;
+	}
 }
 
 
@@ -774,6 +779,8 @@ footer img {
 		height: 258px;
 		margin-bottom: 100px;
 		background-position: 20%;
+		min-height: 258px;
+		max-height: 300px;
 	}
 
 	.project a, .project a:hover, .project a:active {
