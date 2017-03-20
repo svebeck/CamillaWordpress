@@ -98,7 +98,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 .splash {
 	height: 500px;
-	max-height: 550px;
+	max-height: 500px;
 	min-height: 450px;
 	overflow:hidden;
 	background-repeat: no-repeat;
@@ -183,6 +183,7 @@ h1.projects {
 	font-weight: 600;
 }
 
+.project .title-right-down,
 .project .title-left-down,
 .project .title-right,
 .project .title-left {
@@ -195,6 +196,13 @@ h1.projects {
 .project .title-right {
 	right:0;
 	text-align: left;
+	padding: 10px 20px 0 21px;
+}
+
+.project .title-right-down {
+	right:0;
+	text-align: left;
+	top: 310px;
 	padding: 10px 20px 0 21px;
 }
 
@@ -632,6 +640,7 @@ footer img {
 		display: none !important;
 	}
 
+	.project .title-right-down,
 	.project .title-left-down,
 	.project .title-right,
 	.project .title-left {
@@ -694,6 +703,7 @@ footer img {
 		display: none !important;
 	}
 
+	.project .title-right-down,
 	.project .title-left-down,
 	.project .title-right,
 	.project .title-left {
@@ -850,6 +860,7 @@ footer img {
 		font-size: 0.75rem;
 	}
 
+	.project .title-right-down,
 	.project .title-left-down,
 	.project .title-right,
 	.project .title-left {
@@ -861,6 +872,7 @@ footer img {
 		padding: 0px 10px 0 20px;
 	}
 
+	.project .title-right-down,
 	.project .title-right {
 		padding: 0px 20px 0 10px;
 	}
@@ -940,6 +952,7 @@ footer img {
 /* Extra Small Only*/
 @media screen and (max-width: 20.9375em) {
 
+	.project .title-right-down,
 	.project .title-left-down,
 	.project .title-right,
 	.project .title-left {

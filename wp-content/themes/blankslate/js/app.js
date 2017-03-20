@@ -101,6 +101,12 @@ jQuery(document).ready(function($) {
 	    	$(this).css("margin-right", -width+"px");
 		}); 
 
+		$('.title-right-down').each(function( index, element ){
+	    	var width = $( this ).outerWidth()-1;
+	    	$(this).css("margin-right", -width+"px");
+		});
+
+
 		$('.title-left-down').each(function( index, element ){
 	    	var width = $( this ).outerWidth()-1;
 	    	$(this).css("margin-left", -width+"px");
