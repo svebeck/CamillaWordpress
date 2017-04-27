@@ -16,7 +16,7 @@
 						<a href="https://www.behance.net/c_karlssoned26">
 							<img class="svg social-icon" src="<?php echo get_template_directory_uri(); ?>/images/icon_behance.svg" />
 						</a>
-						<a href="mailto:camilla.karlsson@medieinstitutet.se">
+						<a href="mailto:<?php echo get_option( 'admin_email' ); ?>">
 							<img class="svg social-icon" src="<?php echo get_template_directory_uri(); ?>/images/icon_mail.svg" />
 						</a>
 					</div>

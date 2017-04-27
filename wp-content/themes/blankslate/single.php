@@ -82,7 +82,7 @@
 	<div class="column small-12 medium-6"></div>
 	<div class="column small-12 medium-6 block">
 		<h3>Vill du veta mer? Hör av dig!</h3>
-		<p class="info">camilla.karlsson@medieinstitutet.se</p>
+		<p class="info"><?php echo get_option( 'admin_email' ); ?></p>
 	</div>
 	<?php endwhile; endif; ?>
 
