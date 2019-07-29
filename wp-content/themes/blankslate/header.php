@@ -3,7 +3,6 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 <?php wp_head(); ?>
 
@@ -16,20 +15,46 @@
 <body>
 <div id="wrapper" class="hfeed">
 
+<?php if (is_page() ): ?>
+<div class="bg-cover">
+	<header id="header" class="row collapse" role="banner">
+		<div class="column small-12">
+			<section id="branding">
+				<a class="logo" href="<?php echo get_home_url(); ?>">
+					<img class="logo-icon svg" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" />
+				</a>
+			</section>
+			<nav id="menu" role="navigation">
+				<a class="menu-burger">
+					<img class="menu-burger-icon svg" src="<?php echo get_template_directory_uri(); ?>/images/menu.svg" />
+				</a>
+			</nav>
+		</div>
+		<div class="column small-12 header-title">
+			<p>Ny logotyp/ identitet till Bar Brillo.</p>
+			<a>Se case</p>
+		</div>
+	</header>
+	<div class="arrow-container">
+		<a href="#projects" class="arrow-down"><img class="svg arrow-down-icon" src="<?php echo get_template_directory_uri(); ?>/images/arrow_down.svg" /></a>
+	</div>
+</div>
+<?php else: ?>
 <header id="header" class="row collapse" role="banner">
-	<div class="columns">
+	<div class="column small-12">
 		<section id="branding">
 			<a class="logo" href="<?php echo get_home_url(); ?>">
-				<img class="logo-icon svg" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" />
+				<img class="logo-icon fill-black svg" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" />
 			</a>
 		</section>
 		<nav id="menu" role="navigation">
 			<a class="menu-burger">
-				<img class="menu-burger-icon svg" src="<?php echo get_template_directory_uri(); ?>/images/menu.svg" />
+				<img class="menu-burger-icon fill-black svg" src="<?php echo get_template_directory_uri(); ?>/images/menu.svg" />
 			</a>
 		</nav>
 	</div>
 </header>
+<?php endif; ?>
 
 <nav class="menu-block">
 	<div class="row collapse">

@@ -132,4 +132,14 @@
 		</div>
 	</div>	
 <?php wp_reset_postdata(); ?>
+	<div class="column small-6 project hide-for-medium-down"></div>
+	<div class="column small-6 project feedback">
+		<div class="margin-left project-left project-small" style="background-color: <?php the_field('featured_background_color') ?> ">
+			<div class="title-right">
+				<p>Magnus Lind, Fula Fisken</p>
+			</div>
+		
+			<p class="quote">“Camilla tog sig an uppdraget att modernisera vår hemsida proffsigt och med stor entusiasm.” </p>
+		</div>
+	</div>	
   </section>
